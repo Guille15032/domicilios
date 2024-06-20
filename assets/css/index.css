@@ -1,0 +1,10 @@
+#txtDescription {
+    resize: none;
+    height: 200px;
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

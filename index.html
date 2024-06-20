@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domicilios - MediWeb</title>
+    <link rel="shorcut icon" href="assets/img/icon-removebg-preview.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+
+
+    <header class="my-3 header-center">
+        <a href="https://5501-idx-proyecto2-1716746740082.cluster-fnjdffmttjhy2qqdugh3yehhs2.cloudworkstations.dev/index.html">
+            <img src="./assets/img/logomorado.png" alt="Logo" width="300px">
+        </a>
+        
+    </header>
+    
+
+    <main class="container">
+
+        <section class="row text-center">
+            <article class="col-xs-12 col-md-6 mb-3">
+
+                <img class="img-fluid rounded" src="./assets/img/medicamentos.png" alt="Medicamentos">
+
+            </article>
+            <article class="col-xs-12 col-md-6">
+
+                <form novalidate class="form-floating" id="teacherForm">
+
+                    <div id="containerId" class="form-floating mb-3 d-none">
+                        <input type="number" id="txtId" name="txtId" class="form-control" readonly disabled>
+                        <label for="txtId">ID del pedido</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" id="txtName" name="txtName" class="form-control" placeholder="Ejm: Yhoan">
+                        <label for="txtName">Medicamento a entregar</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea name="txtDescription" id="txtDescription" cols="30" rows="10" class="form-control"></textarea>
+                        <label for="txtDescription">Lugar de entrega y especificaciones</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" id="txtNumero" name="txtNumero" class="form-control" placeholder="Ejm: XXXXXXXX">
+                        <label for="txtNumero">Telefono del destinatario o farmacia</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="date" id="txtBirthDate" name="txtBirthDate" class="form-control" placeholder="Ejm: 05/07/1993">
+                        <label for="txtBirthDate">Fecha de entrega del pedido</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="d-grid col-md-6 mb-3">
+                            <button type="reset" id="btnCancel" class="btn btn-secondary">Cancelar</button>
+                        </div>
+                        <div class="d-grid col-md-6 mb-3">
+                            <button type="submit" id="btnSubmit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </article>
+        </section>
+
+        <section class="row mt-3">
+
+            <div class="col-12">
+
+                <div class="table-responsive">
+
+                    <table id="tblTeachers" class="table table-hover table-bordered">
+
+                        <caption>
+                            Registro de los medicamentos
+                        </caption>
+
+                        <thead>
+
+                            <tr class="table-dark text-center">
+                                <th scope="col">
+                                    ID del pedido
+                                </th>
+                                <th scope="col">
+                                    Medicamento a entregar
+                                </th>
+                                <th scope="col">
+                                    Lugar de entrega y especificaciones
+                                </th>
+                                <th scope="col">
+                                    Telefono del destinatario o farmacia
+                                </th>
+                                <th scope="col">
+                                    Fecha de entrega del pedido
+                                </th>
+                                <th scope="col">
+                                    Opciones
+                                </th>
+
+                                
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Derechos reservados por MediWeb.com <em class="fa-regular fa-copyright"></em>
+    </footer>
+
+</body>
+
+</html>
